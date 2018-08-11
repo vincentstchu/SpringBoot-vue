@@ -13,6 +13,9 @@ pipeline {
         }
         
       }
+      environment {
+        MAVEN_HOME = '/usr/local/maven'
+      }
       steps {
         sh 'maven clean install '
         echo 'hello world'
