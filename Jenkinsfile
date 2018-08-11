@@ -18,7 +18,7 @@ pipeline {
         JAVA_HOME = '/usr/java/jdk1.8.0_181-amd64/'
       }
       steps {
-        sh 'mvn clean install '
+        sh 'mvn clean package'
         echo 'hello world'
       }
     }
