@@ -9,7 +9,7 @@ pipeline {
         
       }
       steps {
-        git(url: 'https://github.com/vincentstchu/SpringBoot-vue.git', branch: 'master')
+        sh 'maven clean install '
       }
     }
   }
