@@ -1,15 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('checkout source code') {
-      agent {
-        node {
-          label 'fefdora28'
-        }
-        
-      }
+    stage('build') {
+      agent any
       steps {
         sh 'maven clean install '
+        echo 'hello world'
       }
     }
   }
