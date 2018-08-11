@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'remote node test'
+      label 'remote'
     }
     
   }
@@ -9,7 +9,7 @@ pipeline {
     stage('build') {
       agent {
         node {
-          label 'remote node test'
+          label 'remote'
         }
         
       }
